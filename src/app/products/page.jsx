@@ -6,6 +6,7 @@ const Product = async () => {
 
    const product = await loadProductData();
 
+
    return (
       <div>
          {/* <h1>product{product.length}</h1> */}
@@ -13,7 +14,7 @@ const Product = async () => {
          <div className="flex flex-wrap items-center justify-between p-5">
             {
                product.map(({ id, title, image, category }) => (
-                  <div className="box  text-white bg-slate-600 p-4 m-3 w-[300px] h-[400px] rounded-md cursor-pointer">
+                  <div className="box  text-white bg-slate-600 p-4 m-3 w-[300px] h-[420px] rounded-md cursor-pointer">
                      <div>
                         <h3>{category}</h3>
 
@@ -22,12 +23,17 @@ const Product = async () => {
                      <div className="mt-2 p-1">
                         <h2>{title}</h2>
                         {/* <h2>price: ${price}</h2> */}
+                        <button
+
+                           className='text-right bg-yellow-400 text-black mt-2 p-1 text-sm'>add cart</button>
                      </div>
+
                      <div className='text-right'>
 
                         <Link href={`/products/${id}`}
 
                            className='text-right text-cyan-500 text-sm'>See More..</Link>
+
                      </div>
                   </div>
 

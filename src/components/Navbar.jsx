@@ -8,6 +8,7 @@ const Navbar = () => {
             <ul className="text-2xl  text-white">
                <a className='m-2 p-2' href="/">Home</a>
                <a className='m-2 p-2' href="/products">Product</a>
+               <a className='m-2 p-2' href="/cart">cart</a>
             </ul>
          </div>
       </div>
